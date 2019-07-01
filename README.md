@@ -2,6 +2,8 @@
 
 In this script, we will perform analysis on the following dataset: http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones
 
+This script attempts to take training and test data from multiple files and bind, relabel, and perform mean calculation grouped by Subject and Activity.
+
 After importing relevant libraries, the script will attempt to read .txt files relevant to the project and store them in appropriately-labeled variables.
 
 Each dataset contains an X, y, and subject training and test dataset. For each, the script will attempt to bind training and test datasets and store them in new variables. 
@@ -12,4 +14,4 @@ Once the X datasets have been bound together, the script will take rows from the
 
 Now, X, y, and subject datasets are prepared to be bound together by the script. After binding, the script will group by subject and by activity to prepare for the final step. The final step, is an aggregation function, by which each group of subject and activity will have its mean value calculated for all remaining features. 
 
-This last dataset is then exported in a txt file.
+This tidied dataset is then exported in a txt file.
