@@ -3,7 +3,7 @@ library(plyr)
 library(data.table)
 library(stringr)
 
-#
+
 y_train_table <- read.table("C:\\Users\\Hampster-Admin\\Downloads\\getdata_projectfiles_UCI HAR Dataset\\UCI HAR Dataset\\train\\y_train.txt")
 y_test_table <- read.table("C:\\Users\\Hampster-Admin\\Downloads\\getdata_projectfiles_UCI HAR Dataset\\UCI HAR Dataset\\test\\y_test.txt")
 activity_labels <- read.table("C:\\Users\\Hampster-Admin\\Downloads\\getdata_projectfiles_UCI HAR Dataset\\UCI HAR Dataset\\activity_labels.txt")
@@ -12,9 +12,8 @@ X_test_table <- read.table("C:\\Users\\Hampster-Admin\\Downloads\\getdata_projec
 features <- read.table("C:\\Users\\Hampster-Admin\\Downloads\\getdata_projectfiles_UCI HAR Dataset\\UCI HAR Dataset\\features.txt")
 subject_train <- read.table("C:\\Users\\Hampster-Admin\\Downloads\\getdata_projectfiles_UCI HAR Dataset\\UCI HAR Dataset\\train\\subject_train.txt")
 subject_test <- read.table("C:\\Users\\Hampster-Admin\\Downloads\\getdata_projectfiles_UCI HAR Dataset\\UCI HAR Dataset\\test\\subject_test.txt")
-#
-#
-#
+
+
 y_bound<- rbind(y_train_table, y_test_table) #Binding y test to the bottom of y train.
 y_bound <- join(y_bound, activity_labels) #Joining activity labels and y table.
 y_tidy <- subset(y_bound, select = -c(V1)) #Removing unused column.
