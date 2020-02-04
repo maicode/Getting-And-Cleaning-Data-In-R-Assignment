@@ -1,4 +1,4 @@
- Getting-And-Cleaning-Data-In-R-Assignment
+# Getting-And-Cleaning-Data-In-R-Assignment
 
 In this script, we will perform analysis on the following dataset: http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones
 
